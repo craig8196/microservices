@@ -19,6 +19,8 @@ export const errorHandler = (
   else {
     console.log('An unhandled error has occurred, notify development: ' + err.message);
 
+    console.log(err.stack);
+
     return res.status(500).send({
       errors: new ExternalError('An internal error occurred.')
     });
