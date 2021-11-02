@@ -16,4 +16,13 @@ build:
         manual:
           - src: 'src/**/*.ts'
             dest: .
+    - image: craigcrj/client
+      context: client
+      docker:
+        dockerfile: Dockerfile
+      sync:
+        manual:
+          - src: '**/*.js'
+            dest: .
+
 
