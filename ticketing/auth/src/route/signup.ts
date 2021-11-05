@@ -11,10 +11,6 @@ import { toHash } from '../shared/password';
 const JWT_KEY = process.env.JWT_KEY!;
 const router = express.Router();
 
-router.get('/api/users/signup', (req, res) => {
-  res.send('hey signup!');
-});
-
 router.post(
   '/api/users/signup',
 
