@@ -1,6 +1,6 @@
 import mongoose from 'mongoose';
 
-import { PasswordHash, toHash } from '../shared/password';
+import { PasswordHash, toHash } from '../api/password';
 
 
 interface UserAttrs {

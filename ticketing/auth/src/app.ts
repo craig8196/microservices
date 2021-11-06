@@ -7,8 +7,8 @@ import { currentUserRouter } from './route/current-user';
 import { signinRouter } from './route/signin';
 import { signoutRouter } from './route/signout';
 import { signupRouter } from './route/signup';
-import { errorHandler } from './middleware/error-handler';
-import { NotFoundError } from './errors/not-found-error';
+import { errorHandler } from '@crj-gittix/common';
+import { NotFoundError } from '@crj-gittix/common';
 
 
 const app = express();

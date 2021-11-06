@@ -2,10 +2,10 @@ import express, { Request, Response } from 'express';
 import { body, validationResult } from 'express-validator';
 import jwt from 'jsonwebtoken';
 
-import { validationHandler } from '../middleware/validation-handler';
-import { BadRequestError } from '../errors/bad-request-error';
+import { validationHandler } from '@crj-gittix/common';
+import { BadRequestError } from '@crj-gittix/common';
 import { User } from '../models/user';
-import { toHash } from '../shared/password';
+import { toHash } from '../api/password';
 
 
 const JWT_KEY = process.env.JWT_KEY!;

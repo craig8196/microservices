@@ -1,5 +1,5 @@
 import express from 'express';
-import { currentUserHandler } from '../middleware/current-user-handler';
+import { currentUserHandler } from '@crj-gittix/common';
 
 
 const router = express.Router();
